@@ -38,31 +38,31 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
 
 Card.displayName = "Card";
 
-interface CardHeaderProps extends React.HTMLAttributes<HTMLDivElement> {}
+type CardHeaderProps = React.HTMLAttributes<HTMLDivElement>;
 const CardHeader = ({ className, ...props }: CardHeaderProps) => (
   <div className={cn("flex flex-col space-y-1.5 pb-4", className)} {...props} />
 );
 CardHeader.displayName = "CardHeader";
 
-interface CardTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
+type CardTitleProps = React.HTMLAttributes<HTMLHeadingElement>;
 const CardTitle = ({ className, ...props }: CardTitleProps) => (
   <h3 className={cn("text-xl font-bold tracking-tight text-white", className)} {...props} />
 );
 CardTitle.displayName = "CardTitle";
 
-interface CardDescriptionProps extends React.HTMLAttributes<HTMLParagraphElement> {}
+type CardDescriptionProps = React.HTMLAttributes<HTMLParagraphElement>;
 const CardDescription = ({ className, ...props }: CardDescriptionProps) => (
   <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 CardDescription.displayName = "CardDescription";
 
-interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {}
+type CardContentProps = React.HTMLAttributes<HTMLDivElement>;
 const CardContent = ({ className, ...props }: CardContentProps) => (
   <div className={cn("flex-grow pt-0", className)} {...props} />
 );
 CardContent.displayName = "CardContent";
 
-interface CardFooterProps extends React.HTMLAttributes<HTMLDivElement> {}
+type CardFooterProps = React.HTMLAttributes<HTMLDivElement>;
 const CardFooter = ({ className, ...props }: CardFooterProps) => (
   <div className={cn("flex items-center pt-4 border-t border-white/5 mt-auto", className)} {...props} />
 );

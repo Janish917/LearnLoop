@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import { Cpu, Github, Twitter, Linkedin, Send } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Button } from "@/components/ui/button";
 
 const footerLinks = [
   {
@@ -42,7 +41,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#050816] border-t border-white/5 pt-20 pb-10 overflow-hidden w-full mt-auto">
+    <footer className="relative bg-[#020205] border-t border-white/5 pt-20 pb-10 overflow-hidden w-full mt-auto">
       {/* Background glow behind footer */}
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[300px] bg-primary-purple/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-[400px] h-[250px] bg-[#14B8A6]/5 blur-[100px] rounded-full pointer-events-none" />
@@ -53,10 +52,10 @@ export function Footer() {
           <div className="lg:col-span-2 flex flex-col space-y-6">
             <Link href="/" className="flex items-center gap-2 group w-fit">
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#5B4BDB]/10 border border-[#5B4BDB]/25 group-hover:border-[#5B4BDB]/50 transition-all">
-                <Cpu className="w-4 h-4 text-[#14B8A6]" />
+                <Cpu className="w-4 h-4 text-white" />
               </div>
               <span className="font-heading font-bold text-lg tracking-tight text-white">
-                LearnLoop<span className="text-[#14B8A6] font-light">.AI</span>
+                LearnLoop<span className="text-[#C9A96E] font-light">.AI</span>
               </span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-sm font-body leading-relaxed">
